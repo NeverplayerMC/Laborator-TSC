@@ -55,7 +55,7 @@ module instr_register_test (tb_ifc myio);
       @(negedge myio.clk) print_results;
     end
 
-    @(posedge myio.clk) ;
+    @(posedge clk) ;
     $display("\n***********************************************************");
     $display(  "***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***");
     $display(  "***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***");
