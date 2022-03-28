@@ -1,0 +1,244 @@
+# Reading C:/modeltech_6.6d/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do run.do 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -novopt top 
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register_pkg
+# Refreshing C:\modeltech_6.6d\examples\work.top
+# Refreshing C:\modeltech_6.6d\examples\work.tb_ifc
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register_test
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register
+# ** Warning: (vsim-3008) ../../lab2/lab01_testbench-interface/instr_register_test.sv(42): [CNNODP] - Component name (clk) is not on a downward path.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(84): Clocking block output myio.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(82): Clocking block output myio.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(83): Clocking block output myio.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(35): Clocking block output myio.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(34): Clocking block output myio.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# ********************FIRST HEADER***************************
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing to register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Writing to register location 1: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 9
+# 
+# Writing to register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -15
+#   operand_b = 13
+# 
+# Writing to register location 3: 
+#   opcode = 2 (PASSB)
+#   operand_a = -8
+#   operand_b = 5
+# 
+# Writing to register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = -9
+#   operand_b = 1
+# 
+# Writing to register location 5: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 6
+# 
+# Writing to register location 6: 
+#   opcode = 4 (SUB)
+#   operand_a = 3
+#   operand_b = 13
+# 
+# Writing to register location 7: 
+#   opcode = 6 (DIV)
+#   operand_a = 12
+#   operand_b = 9
+# 
+# Writing to register location 8: 
+#   opcode = 2 (PASSB)
+#   operand_a = 3
+#   operand_b = 5
+# 
+# Writing to register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+# 
+# Reading back the same register locations written...
+# Printing at time: 154
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+# Printing at time: 164
+# Read from register location 8: 
+#   opcode = 2 (PASSB)
+#   operand_a = 3
+#   operand_b = 5
+# 
+# Printing at time: 174
+# Read from register location 7: 
+#   opcode = 6 (DIV)
+#   operand_a = 12
+#   operand_b = 9
+# 
+# Printing at time: 184
+# Read from register location 6: 
+#   opcode = 4 (SUB)
+#   operand_a = 3
+#   operand_b = 13
+# 
+# Printing at time: 194
+# Read from register location 5: 
+#   opcode = 5 (MULT)
+#   operand_a = 5
+#   operand_b = 6
+# 
+# Printing at time: 204
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = -9
+#   operand_b = 1
+# 
+# Printing at time: 214
+# Read from register location 3: 
+#   opcode = 2 (PASSB)
+#   operand_a = -8
+#   operand_b = 5
+# 
+# Printing at time: 224
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -15
+#   operand_b = 13
+# 
+# Printing at time: 234
+# Read from register location 1: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 9
+# 
+# Printing at time: 244
+# Read from register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Printing at time: 254
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = -9
+#   operand_b = 1
+# 
+# Printing at time: 264
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+# Printing at time: 274
+# Read from register location 6: 
+#   opcode = 4 (SUB)
+#   operand_a = 3
+#   operand_b = 13
+# 
+# Printing at time: 284
+# Read from register location 0: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 4
+# 
+# Printing at time: 294
+# Read from register location 8: 
+#   opcode = 2 (PASSB)
+#   operand_a = 3
+#   operand_b = 5
+# 
+# Printing at time: 304
+# Read from register location 3: 
+#   opcode = 2 (PASSB)
+#   operand_a = -8
+#   operand_b = 5
+# 
+# Printing at time: 314
+# Read from register location 4: 
+#   opcode = 5 (MULT)
+#   operand_a = -9
+#   operand_b = 1
+# 
+# Printing at time: 324
+# Read from register location 3: 
+#   opcode = 2 (PASSB)
+#   operand_a = -8
+#   operand_b = 5
+# 
+# Printing at time: 334
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+# Printing at time: 344
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../../lab2/lab01_testbench-interface/instr_register_test.sv(70)
+#    Time: 346 ns  Iteration: 1  Instance: /top/test
+# 1
+# Break in Module instr_register_test at ../../lab2/lab01_testbench-interface/instr_register_test.sv line 70
+# Simulation Breakpoint: 1
+# Break in Module instr_register_test at ../../lab2/lab01_testbench-interface/instr_register_test.sv line 70
+# MACRO ./run.do PAUSED at line 45
