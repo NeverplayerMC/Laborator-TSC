@@ -1,0 +1,59 @@
+# Writing at time: 24 nanoseconds
+# Writing to register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = 13
+#   operand_b = 10
+# 
+# Writing at time: 34 nanoseconds
+# Writing to register location 1: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 8
+# 
+# Writing at time: 44 nanoseconds
+# Writing to register location 2: 
+#   opcode = 2 (PASSB)
+#   operand_a = 13
+#   operand_b = 11
+# 
+# Writing at time: 54 nanoseconds
+# Writing to register location 3: 
+#   opcode = 5 (MULT)
+#   operand_a = 3
+#   operand_b = 12
+# 
+# Writing at time: 64 nanoseconds
+# Writing to register location 4: 
+#   opcode = 0 (ZERO)
+#   operand_a = 10
+#   operand_b = 10
+# 
+# Writing at time: 74 nanoseconds
+# Writing to register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = 6
+#   operand_b = 0
+# 
+# Writing at time: 84 nanoseconds
+# Writing to register location 6: 
+#   opcode = 7 (MOD)
+#   operand_a = 8
+#   operand_b = 12
+# 
+# Writing at time: 94 nanoseconds
+# Writing to register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+# 
+# Writing at time: 104 nanoseconds
+# Writing to register location 8: 
+#   opcode = 7 (MOD)
+#   operand_a = 7
+#   operand_b = 9
+# 
+# Writing at time: 114 nanoseconds
+# Writing to register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = 13
+#   operand_b = 0

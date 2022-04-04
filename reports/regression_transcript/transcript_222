@@ -1,0 +1,261 @@
+# 222 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 222 -novopt top 
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register_pkg
+# Refreshing C:\modeltech_6.6d\examples\work.top
+# Refreshing C:\modeltech_6.6d\examples\work.tb_ifc
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register_test
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(103): Clocking block output myio.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(104): Clocking block output myio.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(105): Clocking block output myio.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(102): Clocking block output myio.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(111): Clocking block output myio.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# ********************FIRST HEADER***************************
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# Writing at time: 24 nanoseconds
+# Writing to register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = 13
+#   operand_b = 10
+# 
+# Writing at time: 34 nanoseconds
+# Writing to register location 1: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 8
+# 
+# Writing at time: 44 nanoseconds
+# Writing to register location 2: 
+#   opcode = 2 (PASSB)
+#   operand_a = 13
+#   operand_b = 11
+# 
+# Writing at time: 54 nanoseconds
+# Writing to register location 3: 
+#   opcode = 5 (MULT)
+#   operand_a = 3
+#   operand_b = 12
+# 
+# Writing at time: 64 nanoseconds
+# Writing to register location 4: 
+#   opcode = 0 (ZERO)
+#   operand_a = 10
+#   operand_b = 10
+# 
+# Writing at time: 74 nanoseconds
+# Writing to register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = 6
+#   operand_b = 0
+# 
+# Writing at time: 84 nanoseconds
+# Writing to register location 6: 
+#   opcode = 7 (MOD)
+#   operand_a = 8
+#   operand_b = 12
+# 
+# Writing at time: 94 nanoseconds
+# Writing to register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+# 
+# Writing at time: 104 nanoseconds
+# Writing to register location 8: 
+#   opcode = 7 (MOD)
+#   operand_a = 7
+#   operand_b = 9
+# 
+# Writing at time: 114 nanoseconds
+# Writing to register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = 13
+#   operand_b = 0
+# 
+# 
+# Reading back the same register locations written...
+# Printing at time: 126 nanoseconds
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = 13
+#   operand_b = 0
+#   result    = x
+# 
+# Printing at time: 136 nanoseconds
+# Read from register location 8: 
+#   opcode = 7 (MOD)
+#   operand_a = 7
+#   operand_b = 9
+#   result    = 7
+# 
+# Printing at time: 146 nanoseconds
+# Read from register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+#   result    = 8
+# 
+# Printing at time: 156 nanoseconds
+# Read from register location 6: 
+#   opcode = 7 (MOD)
+#   operand_a = 8
+#   operand_b = 12
+#   result    = 8
+# 
+# Printing at time: 166 nanoseconds
+# Read from register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = 6
+#   operand_b = 0
+#   result    = x
+# 
+# Printing at time: 176 nanoseconds
+# Read from register location 4: 
+#   opcode = 0 (ZERO)
+#   operand_a = 10
+#   operand_b = 10
+#   result    = 0
+# 
+# Printing at time: 186 nanoseconds
+# Read from register location 3: 
+#   opcode = 5 (MULT)
+#   operand_a = 3
+#   operand_b = 12
+#   result    = 36
+# 
+# Printing at time: 196 nanoseconds
+# Read from register location 2: 
+#   opcode = 2 (PASSB)
+#   operand_a = 13
+#   operand_b = 11
+#   result    = 11
+# 
+# Printing at time: 206 nanoseconds
+# Read from register location 1: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 8
+#   result    = 0
+# 
+# Printing at time: 216 nanoseconds
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = 13
+#   operand_b = 10
+#   result    = 130
+# 
+# Printing at time: 226 nanoseconds
+# Read from register location 8: 
+#   opcode = 7 (MOD)
+#   operand_a = 7
+#   operand_b = 9
+#   result    = 7
+# 
+# Printing at time: 236 nanoseconds
+# Read from register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+#   result    = 8
+# 
+# Printing at time: 246 nanoseconds
+# Read from register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+#   result    = 8
+# 
+# Printing at time: 256 nanoseconds
+# Read from register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+#   result    = 8
+# 
+# Printing at time: 266 nanoseconds
+# Read from register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+#   result    = 8
+# 
+# Printing at time: 276 nanoseconds
+# Read from register location 7: 
+#   opcode = 2 (PASSB)
+#   operand_a = 10
+#   operand_b = 8
+#   result    = 8
+# 
+# Printing at time: 286 nanoseconds
+# Read from register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = 6
+#   operand_b = 0
+#   result    = x
+# 
+# Printing at time: 296 nanoseconds
+# Read from register location 2: 
+#   opcode = 2 (PASSB)
+#   operand_a = 13
+#   operand_b = 11
+#   result    = 11
+# 
+# Printing at time: 306 nanoseconds
+# Read from register location 1: 
+#   opcode = 6 (DIV)
+#   operand_a = 2
+#   operand_b = 8
+#   result    = 0
+# 
+# Printing at time: 316 nanoseconds
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = 13
+#   operand_b = 0
+#   result    = x
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../../lab2/lab01_testbench-interface/instr_register_test.sv(82)
+#    Time: 324 ns  Iteration: 2  Instance: /top/test
+# 1
+# Break in Task run at ../../lab2/lab01_testbench-interface/instr_register_test.sv line 82
+# Simulation Breakpoint: 1
+# Break in Task run at ../../lab2/lab01_testbench-interface/instr_register_test.sv line 82
+# MACRO ./run.do PAUSED at line 45
