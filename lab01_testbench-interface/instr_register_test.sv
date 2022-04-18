@@ -29,10 +29,31 @@ module instr_register_test (tb_ifc myio);
 
 class main_class;
   virtual tb_ifc.tb myio;
+  covergroup my_cov;
+		coverpoint myio.cb.instruction_word.op_a{
+			bins op_a_values_neg={[-15:-1]};
+			bins op_a_values_zero={0};
+			bins op_a_values_pos={[1:15]};
+		}
+		coverpoint myio.cb.instruction_word.op_b{
+			bins op_b_values_zero={0};
+			bins op_b_values={[1:15]};
+		}
+		coverpoint myio.cb.instruction_word.opc{
+			bins op_code_values={[0:7]};
+		}
+		coverpoint myio.cb.instruction_word.result{
+			bins res_values_neg={[-255:-1]};
+			bins res_values_zero={0};
+			bins res_values_pos={[1:255]};
+		}
+		//COVER POINT PENTRU RESULT TEMA!!!
+	endgroup
   //int seed = 555;
-  
+  //parameter number_of_op <= 100;
   function new(virtual tb_ifc.tb manio);
 	myio=manio;
+	my_cov=new();
   endfunction;
   
   task run();
@@ -52,24 +73,27 @@ class main_class;
 
     $display("\nWriting values to register stack...");
     @(posedge myio.cb) myio.cb.load_en <= 1'b1;  // enable writing to register
-    repeat (10) begin
+    repeat (50) begin
       @(posedge myio.cb) randomize_transaction;
       @(negedge myio.cb) print_transaction;
+	  my_cov.sample();
     end
     @(posedge myio.cb) myio.cb.load_en <= 1'b0;  // turn-off writing to register
 
     // read back and display same three register locations
     $display("\nReading back the same register locations written...");
-    for (int i=9; i>=0; i--) begin
+    for (int i=49; i>=0; i--) begin
       // later labs will replace this loop with iterating through a
       // scoreboard to determine which addresses were written and
       // the expected values to be read back
       @(posedge myio.cb) myio.cb.read_pointer <= i;
       @(negedge myio.cb) print_results;
+	  my_cov.sample();
     end
-	repeat (10) begin
+	repeat (50) begin
       @(posedge myio.cb) myio.cb.read_pointer <= $unsigned($random)%10;;
       @(negedge myio.cb) print_results;
+	  
     end
 
 
@@ -113,7 +137,20 @@ class main_class;
     $display("  operand_a = %0d",   myio.cb.instruction_word.op_a);
     $display("  operand_b = %0d", myio.cb.instruction_word.op_b);
 	$display("  result    = %0d\n", myio.cb.instruction_word.result);
+	if(myio.cb.instruction_word.opc==PASSA)
+	begin
+		if(myio.cb.instruction_word.op_a==myio.cb.instruction_word.result)
+		begin
+			$display("VERIFICATION OF  PASSA operand_a = %0d and result = %0d is true",   myio.cb.instruction_word.op_a, myio.cb.instruction_word.result);
+		end
+		else
+		begin
+			$display("VERIFICATION OF  PASSA operand_a = %0d and result = %0d is false",   myio.cb.instruction_word.op_a, myio.cb.instruction_word.result);
+		end
+	end
   endfunction: print_results
+
+	
 
 endclass
 
