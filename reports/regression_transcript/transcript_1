@@ -1,0 +1,41 @@
+# 1 
+# 1
+# Model Technology ModelSim SE vlog 6.6d Compiler 2010.11 Nov  1 2010
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling interface tb_ifc
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vsim +notimingchecks +nowarnTSCALE -sva -nocoverage -quiet -sv_seed 1 -novopt top 
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register_pkg
+# Refreshing C:\modeltech_6.6d\examples\work.top
+# Refreshing C:\modeltech_6.6d\examples\work.tb_ifc
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register_test
+# Refreshing C:\modeltech_6.6d\examples\work.instr_register
+# ** Error: Failure to checkout svverification license feature.
+# ** Error: Unable to checkout verification license - required for testbench features (randomize, randcase, randsequence, covergroup).
+# 
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(127): Clocking block output myio.cb.opcode is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(128): Clocking block output myio.cb.operand_a is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(129): Clocking block output myio.cb.operand_b is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(126): Clocking block output myio.cb.write_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# ** Warning: (vsim-8441) ../../lab2/lab01_testbench-interface/instr_register_test.sv(135): Clocking block output myio.cb.read_pointer is not legal in this
+# or another expression.
+#         Region: /top/test
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./run.do PAUSED at line 23
